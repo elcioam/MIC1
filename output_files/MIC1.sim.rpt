@@ -1,0 +1,735 @@
+Simulator report for MIC1
+Mon Apr 08 22:01:31 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 294 nodes    ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 7            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C70F896I8 ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                       ;
++--------------------------------------------------------------------------------------------+---------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                     ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                                      ; Timing        ;
+; Start time                                                                                 ; 0 ns                                        ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                         ;               ;
+; Vector input source                                                                        ; C:/Users/Aluno/Downloads/MIC1/ULA_32BIT.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                          ; On            ;
+; Check outputs                                                                              ; Off                                         ; Off           ;
+; Report simulation coverage                                                                 ; On                                          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                          ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                          ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                          ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                         ; Off           ;
+; Detect glitches                                                                            ; Off                                         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                         ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                        ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 294          ;
+; Total output ports checked                          ; 290          ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 283          ;
+; Total output ports with no 1-value coverage         ; 285          ;
+; Total output ports with no 0-value coverage         ; 288          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                             ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+; Node Name                                                               ; Output Port Name                                                        ; Output Port Type ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst2                           ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst3                           ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst2                           ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst3                           ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst2                           ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst3                           ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst2                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst2                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst2                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst2                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst2                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst2                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst2                            ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst2                            ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst3                            ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst3                            ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0   ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0   ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|DECODER2_4:inst|inst5~0        ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|DECODER2_4:inst|inst5~0        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst18                         ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst18                         ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst17                         ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst17                         ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst18                         ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst18                         ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst17                         ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst17                         ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst     ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst     ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst16~2                        ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst16~2                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst16~0                         ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst16~0                         ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst16~1                         ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst16~1                         ; combout          ;
+; |ULA_32BIT|COUT                                                         ; |ULA_32BIT|COUT                                                         ; padio            ;
+; |ULA_32BIT|SOMA[31]                                                     ; |ULA_32BIT|SOMA[31]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[30]                                                     ; |ULA_32BIT|SOMA[30]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[29]                                                     ; |ULA_32BIT|SOMA[29]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[28]                                                     ; |ULA_32BIT|SOMA[28]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[27]                                                     ; |ULA_32BIT|SOMA[27]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[26]                                                     ; |ULA_32BIT|SOMA[26]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[25]                                                     ; |ULA_32BIT|SOMA[25]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[24]                                                     ; |ULA_32BIT|SOMA[24]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[23]                                                     ; |ULA_32BIT|SOMA[23]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[22]                                                     ; |ULA_32BIT|SOMA[22]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[21]                                                     ; |ULA_32BIT|SOMA[21]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[20]                                                     ; |ULA_32BIT|SOMA[20]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[19]                                                     ; |ULA_32BIT|SOMA[19]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[18]                                                     ; |ULA_32BIT|SOMA[18]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[17]                                                     ; |ULA_32BIT|SOMA[17]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[16]                                                     ; |ULA_32BIT|SOMA[16]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[15]                                                     ; |ULA_32BIT|SOMA[15]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[14]                                                     ; |ULA_32BIT|SOMA[14]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[13]                                                     ; |ULA_32BIT|SOMA[13]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[12]                                                     ; |ULA_32BIT|SOMA[12]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[11]                                                     ; |ULA_32BIT|SOMA[11]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[10]                                                     ; |ULA_32BIT|SOMA[10]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[9]                                                      ; |ULA_32BIT|SOMA[9]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[8]                                                      ; |ULA_32BIT|SOMA[8]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[7]                                                      ; |ULA_32BIT|SOMA[7]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[6]                                                      ; |ULA_32BIT|SOMA[6]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[5]                                                      ; |ULA_32BIT|SOMA[5]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[4]                                                      ; |ULA_32BIT|SOMA[4]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[3]                                                      ; |ULA_32BIT|SOMA[3]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[1]                                                      ; |ULA_32BIT|SOMA[1]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[0]                                                      ; |ULA_32BIT|SOMA[0]                                                      ; padio            ;
+; |ULA_32BIT|ENA                                                          ; |ULA_32BIT|ENA~corein                                                   ; combout          ;
+; |ULA_32BIT|A[31]                                                        ; |ULA_32BIT|A[31]~corein                                                 ; combout          ;
+; |ULA_32BIT|INVA                                                         ; |ULA_32BIT|INVA~corein                                                  ; combout          ;
+; |ULA_32BIT|ENB                                                          ; |ULA_32BIT|ENB~corein                                                   ; combout          ;
+; |ULA_32BIT|B[31]                                                        ; |ULA_32BIT|B[31]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[30]                                                        ; |ULA_32BIT|A[30]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[30]                                                        ; |ULA_32BIT|B[30]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[29]                                                        ; |ULA_32BIT|B[29]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[28]                                                        ; |ULA_32BIT|A[28]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[28]                                                        ; |ULA_32BIT|B[28]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[27]                                                        ; |ULA_32BIT|A[27]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[27]                                                        ; |ULA_32BIT|B[27]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[26]                                                        ; |ULA_32BIT|A[26]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[26]                                                        ; |ULA_32BIT|B[26]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[25]                                                        ; |ULA_32BIT|A[25]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[25]                                                        ; |ULA_32BIT|B[25]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[24]                                                        ; |ULA_32BIT|A[24]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[24]                                                        ; |ULA_32BIT|B[24]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[23]                                                        ; |ULA_32BIT|A[23]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[23]                                                        ; |ULA_32BIT|B[23]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[22]                                                        ; |ULA_32BIT|A[22]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[22]                                                        ; |ULA_32BIT|B[22]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[21]                                                        ; |ULA_32BIT|B[21]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[20]                                                        ; |ULA_32BIT|A[20]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[20]                                                        ; |ULA_32BIT|B[20]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[19]                                                        ; |ULA_32BIT|A[19]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[19]                                                        ; |ULA_32BIT|B[19]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[18]                                                        ; |ULA_32BIT|A[18]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[18]                                                        ; |ULA_32BIT|B[18]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[17]                                                        ; |ULA_32BIT|A[17]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[17]                                                        ; |ULA_32BIT|B[17]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[16]                                                        ; |ULA_32BIT|A[16]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[16]                                                        ; |ULA_32BIT|B[16]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[15]                                                        ; |ULA_32BIT|A[15]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[15]                                                        ; |ULA_32BIT|B[15]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[14]                                                        ; |ULA_32BIT|A[14]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[14]                                                        ; |ULA_32BIT|B[14]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[13]                                                        ; |ULA_32BIT|B[13]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[12]                                                        ; |ULA_32BIT|A[12]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[12]                                                        ; |ULA_32BIT|B[12]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[11]                                                        ; |ULA_32BIT|A[11]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[11]                                                        ; |ULA_32BIT|B[11]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[10]                                                        ; |ULA_32BIT|A[10]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[10]                                                        ; |ULA_32BIT|B[10]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[9]                                                         ; |ULA_32BIT|A[9]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[9]                                                         ; |ULA_32BIT|B[9]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[8]                                                         ; |ULA_32BIT|A[8]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[8]                                                         ; |ULA_32BIT|B[8]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[7]                                                         ; |ULA_32BIT|A[7]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[7]                                                         ; |ULA_32BIT|B[7]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[6]                                                         ; |ULA_32BIT|A[6]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[6]                                                         ; |ULA_32BIT|B[6]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[5]                                                         ; |ULA_32BIT|B[5]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[4]                                                         ; |ULA_32BIT|A[4]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[4]                                                         ; |ULA_32BIT|B[4]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[3]                                                         ; |ULA_32BIT|A[3]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[3]                                                         ; |ULA_32BIT|B[3]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[2]                                                         ; |ULA_32BIT|B[2]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[1]                                                         ; |ULA_32BIT|A[1]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[1]                                                         ; |ULA_32BIT|B[1]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[0]                                                         ; |ULA_32BIT|A[0]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[0]                                                         ; |ULA_32BIT|B[0]~corein                                                  ; combout          ;
+; |ULA_32BIT|CIN                                                          ; |ULA_32BIT|CIN~corein                                                   ; combout          ;
+; |ULA_32BIT|F0                                                           ; |ULA_32BIT|F0~corein                                                    ; combout          ;
+; |ULA_32BIT|F1                                                           ; |ULA_32BIT|F1~corein                                                    ; combout          ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                             ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+; Node Name                                                               ; Output Port Name                                                        ; Output Port Type ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst2                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst3                          ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst2                           ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst3                           ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst2                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst3                          ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst2                           ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst3                           ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst2                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst2                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst3                          ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst3                          ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst2                           ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst3                           ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst2                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst2                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst2                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst2                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst2                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|inst2                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst2                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst2                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst3                           ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst3                           ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst2                            ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst2                            ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst3                            ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst3                            ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0   ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0   ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0  ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst6~0  ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0 ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst6~0 ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|DECODER2_4:inst|inst5~0        ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|DECODER2_4:inst|inst5~0        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst18                         ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst18                         ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst17                         ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst17                         ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst9|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst18                         ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst18                         ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst17                         ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst17                         ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst8|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst7|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst6|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst3|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst4|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst2|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst     ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|FULL_ADDER_1BIT:inst19|inst     ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst16~2                        ; |ULA_32BIT|ULA_8BIT:inst3|ULA_1BIT:inst|inst16~2                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst9|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst8|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst7|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst6|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst3|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst    ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|FULL_ADDER_1BIT:inst19|inst    ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst16~2                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst4|inst16~2                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst2|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst2|ULA_1BIT:inst|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst9|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst8|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst7|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst6|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst3|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst4|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst16~0                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst16~0                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst16~1                       ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst2|inst16~1                       ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst1|ULA_1BIT:inst|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst9|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst8|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst7|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst6|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst3|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst4|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst16~0                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst16~0                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst16~1                        ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst2|inst16~1                        ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst16~0                         ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst16~0                         ; combout          ;
+; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst16~1                         ; |ULA_32BIT|ULA_8BIT:inst|ULA_1BIT:inst|inst16~1                         ; combout          ;
+; |ULA_32BIT|COUT                                                         ; |ULA_32BIT|COUT                                                         ; padio            ;
+; |ULA_32BIT|SOMA[31]                                                     ; |ULA_32BIT|SOMA[31]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[30]                                                     ; |ULA_32BIT|SOMA[30]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[29]                                                     ; |ULA_32BIT|SOMA[29]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[28]                                                     ; |ULA_32BIT|SOMA[28]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[27]                                                     ; |ULA_32BIT|SOMA[27]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[26]                                                     ; |ULA_32BIT|SOMA[26]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[25]                                                     ; |ULA_32BIT|SOMA[25]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[24]                                                     ; |ULA_32BIT|SOMA[24]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[23]                                                     ; |ULA_32BIT|SOMA[23]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[22]                                                     ; |ULA_32BIT|SOMA[22]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[21]                                                     ; |ULA_32BIT|SOMA[21]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[20]                                                     ; |ULA_32BIT|SOMA[20]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[19]                                                     ; |ULA_32BIT|SOMA[19]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[18]                                                     ; |ULA_32BIT|SOMA[18]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[17]                                                     ; |ULA_32BIT|SOMA[17]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[16]                                                     ; |ULA_32BIT|SOMA[16]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[15]                                                     ; |ULA_32BIT|SOMA[15]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[14]                                                     ; |ULA_32BIT|SOMA[14]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[13]                                                     ; |ULA_32BIT|SOMA[13]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[12]                                                     ; |ULA_32BIT|SOMA[12]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[11]                                                     ; |ULA_32BIT|SOMA[11]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[10]                                                     ; |ULA_32BIT|SOMA[10]                                                     ; padio            ;
+; |ULA_32BIT|SOMA[9]                                                      ; |ULA_32BIT|SOMA[9]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[8]                                                      ; |ULA_32BIT|SOMA[8]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[7]                                                      ; |ULA_32BIT|SOMA[7]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[6]                                                      ; |ULA_32BIT|SOMA[6]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[5]                                                      ; |ULA_32BIT|SOMA[5]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[4]                                                      ; |ULA_32BIT|SOMA[4]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[3]                                                      ; |ULA_32BIT|SOMA[3]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[2]                                                      ; |ULA_32BIT|SOMA[2]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[1]                                                      ; |ULA_32BIT|SOMA[1]                                                      ; padio            ;
+; |ULA_32BIT|SOMA[0]                                                      ; |ULA_32BIT|SOMA[0]                                                      ; padio            ;
+; |ULA_32BIT|ENA                                                          ; |ULA_32BIT|ENA~corein                                                   ; combout          ;
+; |ULA_32BIT|A[31]                                                        ; |ULA_32BIT|A[31]~corein                                                 ; combout          ;
+; |ULA_32BIT|INVA                                                         ; |ULA_32BIT|INVA~corein                                                  ; combout          ;
+; |ULA_32BIT|ENB                                                          ; |ULA_32BIT|ENB~corein                                                   ; combout          ;
+; |ULA_32BIT|B[31]                                                        ; |ULA_32BIT|B[31]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[30]                                                        ; |ULA_32BIT|A[30]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[30]                                                        ; |ULA_32BIT|B[30]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[29]                                                        ; |ULA_32BIT|B[29]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[28]                                                        ; |ULA_32BIT|A[28]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[28]                                                        ; |ULA_32BIT|B[28]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[27]                                                        ; |ULA_32BIT|A[27]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[27]                                                        ; |ULA_32BIT|B[27]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[26]                                                        ; |ULA_32BIT|A[26]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[26]                                                        ; |ULA_32BIT|B[26]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[25]                                                        ; |ULA_32BIT|A[25]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[25]                                                        ; |ULA_32BIT|B[25]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[24]                                                        ; |ULA_32BIT|A[24]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[24]                                                        ; |ULA_32BIT|B[24]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[23]                                                        ; |ULA_32BIT|A[23]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[23]                                                        ; |ULA_32BIT|B[23]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[22]                                                        ; |ULA_32BIT|A[22]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[22]                                                        ; |ULA_32BIT|B[22]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[21]                                                        ; |ULA_32BIT|B[21]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[20]                                                        ; |ULA_32BIT|A[20]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[20]                                                        ; |ULA_32BIT|B[20]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[19]                                                        ; |ULA_32BIT|A[19]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[19]                                                        ; |ULA_32BIT|B[19]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[18]                                                        ; |ULA_32BIT|A[18]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[18]                                                        ; |ULA_32BIT|B[18]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[17]                                                        ; |ULA_32BIT|A[17]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[17]                                                        ; |ULA_32BIT|B[17]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[16]                                                        ; |ULA_32BIT|A[16]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[16]                                                        ; |ULA_32BIT|B[16]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[15]                                                        ; |ULA_32BIT|A[15]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[15]                                                        ; |ULA_32BIT|B[15]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[14]                                                        ; |ULA_32BIT|A[14]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[14]                                                        ; |ULA_32BIT|B[14]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[13]                                                        ; |ULA_32BIT|B[13]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[12]                                                        ; |ULA_32BIT|A[12]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[12]                                                        ; |ULA_32BIT|B[12]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[11]                                                        ; |ULA_32BIT|A[11]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[11]                                                        ; |ULA_32BIT|B[11]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[10]                                                        ; |ULA_32BIT|A[10]~corein                                                 ; combout          ;
+; |ULA_32BIT|B[10]                                                        ; |ULA_32BIT|B[10]~corein                                                 ; combout          ;
+; |ULA_32BIT|A[9]                                                         ; |ULA_32BIT|A[9]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[9]                                                         ; |ULA_32BIT|B[9]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[8]                                                         ; |ULA_32BIT|A[8]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[8]                                                         ; |ULA_32BIT|B[8]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[7]                                                         ; |ULA_32BIT|A[7]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[7]                                                         ; |ULA_32BIT|B[7]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[6]                                                         ; |ULA_32BIT|A[6]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[6]                                                         ; |ULA_32BIT|B[6]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[5]                                                         ; |ULA_32BIT|B[5]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[4]                                                         ; |ULA_32BIT|A[4]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[4]                                                         ; |ULA_32BIT|B[4]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[3]                                                         ; |ULA_32BIT|A[3]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[2]                                                         ; |ULA_32BIT|A[2]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[2]                                                         ; |ULA_32BIT|B[2]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[1]                                                         ; |ULA_32BIT|A[1]~corein                                                  ; combout          ;
+; |ULA_32BIT|A[0]                                                         ; |ULA_32BIT|A[0]~corein                                                  ; combout          ;
+; |ULA_32BIT|B[0]                                                         ; |ULA_32BIT|B[0]~corein                                                  ; combout          ;
+; |ULA_32BIT|CIN                                                          ; |ULA_32BIT|CIN~corein                                                   ; combout          ;
+; |ULA_32BIT|F0                                                           ; |ULA_32BIT|F0~corein                                                    ; combout          ;
+; |ULA_32BIT|F1                                                           ; |ULA_32BIT|F1~corein                                                    ; combout          ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Apr 08 22:01:31 2024
+Info: Command: quartus_sim --simulation_results_format=VWF MIC1 -c MIC1
+Info (324025): Using vector source file "C:/Users/Aluno/Downloads/MIC1/ULA_32BIT.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is       0.00 %
+Info (328052): Number of transitions in simulation is 7
+Info (324045): Vector file MIC1.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4476 megabytes
+    Info: Processing ended: Mon Apr 08 22:01:31 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+
