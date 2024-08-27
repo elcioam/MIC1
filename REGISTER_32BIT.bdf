@@ -87,7 +87,7 @@ applicable agreement for further details.
 	(input)
 	(rect -312 536 -144 552)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "OUTPUT_EN" (rect 5 0 70 12)(font "Arial" ))
+	(text "OUTPUT_EN" (rect 5 0 69 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -103,7 +103,7 @@ applicable agreement for further details.
 	(input)
 	(rect -312 576 -120 592)
 	(text "INPUT" (rect 149 0 177 10)(font "Arial" (font_size 6)))
-	(text "OUTPUT_MEM_EN" (rect 5 0 100 12)(font "Arial" ))
+	(text "OUTPUT_MEM_EN" (rect 5 0 99 12)(font "Arial" ))
 	(pt 192 8)
 	(drawing
 		(line (pt 108 12)(pt 133 12))
@@ -119,7 +119,7 @@ applicable agreement for further details.
 	(input)
 	(rect -312 496 -144 512)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "IN_SELECT" (rect 5 0 65 12)(font "Arial" ))
+	(text "IN_SELECT" (rect 5 0 64 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -135,7 +135,7 @@ applicable agreement for further details.
 	(input)
 	(rect -312 448 -136 464)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "IN_MEM[31..0]" (rect 5 0 79 12)(font "Arial" ))
+	(text "IN_MEM[31..0]" (rect 5 0 78 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -151,7 +151,7 @@ applicable agreement for further details.
 	(input)
 	(rect -216 280 -48 296)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "WRITE_EN" (rect 5 0 62 12)(font "Arial" ))
+	(text "WRITE_EN" (rect 5 0 61 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -162,22 +162,6 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(output)
-	(rect 880 688 1056 704)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "OUTPUT[31..0]" (rect 90 0 165 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
 )
 (pin
 	(output)
@@ -1057,12 +1041,6 @@ applicable agreement for further details.
 	(pt 312 144)
 )
 (connector
-	(text "OUTPUT[31..0]" (rect 800 680 875 692)(font "Arial" ))
-	(pt 880 696)
-	(pt 800 696)
-	(bus)
-)
-(connector
 	(pt -144 392)
 	(pt -32 392)
 	(bus)
@@ -1109,11 +1087,6 @@ applicable agreement for further details.
 	(pt 8 288)
 )
 (connector
-	(pt 1272 600)
-	(pt 1248 600)
-	(bus)
-)
-(connector
 	(text "OUTPUT[31..0]" (rect 1104 640 1179 652)(font "Arial" ))
 	(pt 1120 656)
 	(pt 1104 656)
@@ -1132,15 +1105,6 @@ applicable agreement for further details.
 	(text "OUTPUT_MEM_EN" (rect 1136 704 1230 716)(font "Arial" ))
 	(pt 1224 720)
 	(pt 1160 720)
-)
-(connector
-	(pt 1248 680)
-	(pt 1240 680)
-)
-(connector
-	(pt 1248 600)
-	(pt 1248 680)
-	(bus)
 )
 (connector
 	(pt 1120 680)
@@ -1221,6 +1185,21 @@ applicable agreement for further details.
 	(text "INPUT[31..0]" (rect 154 416 218 428)(font "Arial" ))
 	(pt 144 432)
 	(pt 200 432)
+	(bus)
+)
+(connector
+	(pt 1272 600)
+	(pt 1256 600)
+	(bus)
+)
+(connector
+	(pt 1256 600)
+	(pt 1256 680)
+	(bus)
+)
+(connector
+	(pt 1256 680)
+	(pt 1240 680)
 	(bus)
 )
 (junction (pt 312 144))
